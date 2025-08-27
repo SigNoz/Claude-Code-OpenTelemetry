@@ -2,8 +2,8 @@
 
 This repo contains two helper scripts for quickly wiring up OpenTelemetry exports from your local dev machine to **SigNoz Cloud** while you work with Claude Code / VS Code.
 
-- `claude_code_otel_terminal.sh` — sets environment variables for the current terminal session.  
-- `claude_code_otel_vscode.sh` — launches VS Code (`code`) with the same environment so anything you run from VS Code (tasks, debug sessions, terminals) ships traces/metrics/logs to SigNoz.
+- `claude_code_otel_terminal.sh` — sets environment variables for the current terminal session, so that any Claude code activity will be exported to SigNoz.
+- `claude_code_otel_vscode.sh` — launches VS Code (`code`) with the same environment so any Claude Code activity in the VSCode session will be exported to SigNoz.
 
 
 ## 1) Prerequisites
@@ -33,5 +33,9 @@ Before running them, give both scripts execution permissions:
 chmod +x ./claude_code_otel_terminal.sh
 chmod +x ./claude_code_otel_vscode.sh
 ```
+
+Now you can either script and track your Claude Code activity!
+
+
 
   
